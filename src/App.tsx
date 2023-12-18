@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+     <header>
+      <div className="grid-layout">
+        <nav>
+          <img
+            src="src/assets/logoloop 1.svg"
+            alt="iuricode"
+            width="150px"
+            height="25px"
+          />
+          <div className="mobile-menu">
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
+          <ul className="nav-list">
+            <li><a href="" rel="noopener" target="_blank">Home</a></li>
+            <li><a href="" rel="noopener" target="_blank">Sobre</a></li>
+            <li><a href="" rel="noopener" target="_blank">Funcionalidades</a></li>
+            <li><a href="" rel="noopener" target="_blank">Planos</a></li>
+            <li><a href="" rel="noopener" target="_blank">Suporte</a></li>
+            <li><a href="" rel="noopener" target="_blank">Contato</a></li>
+            <li><a href="" rel="noopener" target="_blank">Sou cliente</a></li>
+          </ul>
+        </nav>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </header>
     </>
   )
 }
